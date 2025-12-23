@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>A.F.A — Registros de Anomalias</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registros.css">
+</head>
+<body>
+
+<!-- TOPO -->
+<header class="top-bar">
+    <span class="agency-title">Anomaly Foundation Archives</span>
+
+    <img 
+        src="assets/icones/menu.png"
+        alt="Menu"
+        class="menu-icon"
+        id="menuButton"
+    >
+</header>
+
+<!-- MENU LATERAL -->
+<aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <h2>Menu</h2>
+        <button id="closeMenu" class="close-btn">✕</button>
+    </div>
+
+    <nav class="side-menu-nav">
+        <a href="dashboard.html" class="menu-item">Início</a>
+        <a href="registros.html" class="menu-item">Registros de Anomalias</a>
+        <a href="ranking.html" class="menu-item">Ranking</a>
+    </nav>
+</aside>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="content">
+
+    <!-- CAIXA DE TEXTO -->
+    <section class="records-info">
+        <h1>Registros de Anomalias</h1>
+
+        <p>
+            Como funcionário da A.F.A, seu dever é registrar o máximo de informações
+            possíveis sobre as anomalias, incluindo anotações, imagens, interações
+            e eventos relevantes.
+        </p>
+
+        <p>
+            Entretanto, é necessário cautela. As anomalias não são entidades comuns:
+            elas podem variar desde objetos aparentemente inofensivos até entidades
+            capazes de causar destruição em larga escala.
+        </p>
+
+        <h2>Nomeclaturas</h2>
+        <ul class="nomenclature-list">
+            <li>🕸️ <strong>T</strong> — Originada de traumas ou fobias (T-01)</li>
+            <li>✨ <strong>F</strong> — Originada de contos de fada ou histórias (F-019)</li>
+            <li>⚙️ <strong>M</strong> — Originada de maquinaria amaldiçoada (M-030)</li>
+            <li>❔ <strong>D</strong> — Origem desconhecida (D-X)</li>
+            <li>☯️ <strong>R</strong> — Origem religiosa ou filosófica (R-05)</li>
+        </ul>
+
+        <h2>Níveis de Perigo</h2>
+        <ul class="danger-list">
+            <li class="zayin">🟩 ZAYIN — Anomalias inofensivas</li>
+            <li class="teth">🟦 TETH — Podem causar danos significativos</li>
+            <li class="he">🟨 HE — Podem causar mortes</li>
+            <li class="waw">🟪 WAW — Capazes de causar caos generalizado</li>
+            <li class="aleph">🟥 ALEPH — Capazes de destruição em massa</li>
+        </ul>
+    </section>
+
+    <!-- LISTA DE ANOMALIAS -->
+    <section class="anomaly-list">
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/t01.png" alt="Operalia">
+            <a href="anomalias/t-01.html">T-01 — Operalia</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/t02.png" alt="Remanescents of Love">
+            <a href="anomalias/t-02.html">T-02 — Remanescents of Love</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/d03.png" alt="O Botão">
+            <a href="anomalias/d-03.html">D-03 — O Botão</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/d04.png" alt="O Parasita">
+            <a href="anomalias/d-04.html">D-04 — O Parasita</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/r05.png" alt="Yin e Yang">
+            <a href="anomalias/r-05.html">R-05 — Yin e Yang</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/d07.png" alt="Big Bird">
+            <a href="anomalias/d-07.html">D-07 — Big Bird</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/d09.png" alt="Punishing Bird">
+            <a href="anomalias/d-09.html">D-09 — Punishing Bird</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/f019.png" alt="Pinocchio">
+            <a href="anomalias/f-019.html">F-019 — Pinocchio</a>
+        </div>
+
+        <div class="anomaly-card">
+            <img src="assets/imagens/m30.png" alt="Garion">
+            <a href="anomalias/m-030.html">M-030 — Garion</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© Anomaly Foundation Archives — Todos os direitos reservados</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/menu.js"></script>
+
+</body>
+</html>

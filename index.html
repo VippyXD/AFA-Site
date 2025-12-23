@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>A.F.A — Acesso Restrito</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-box">
+
+    <h1 class="agency-name">A.F.A</h1>
+    <p class="agency-slogan">
+        Aqui na AFA, nós encaramos o medo para construir o futuro
+    </p>
+
+    <p id="errorMessage" class="error-message"></p>
+
+    <!-- LOGIN -->
+    <form id="loginForm">
+        <input type="text" id="loginUser" placeholder="Usuário">
+        <input type="password" id="loginPass" placeholder="Senha">
+
+        <button type="submit">Acessar Arquivos</button>
+
+        <button type="button" id="openRegister" class="link-button">
+            Solicitar cadastro
+        </button>
+    </form>
+
+    <!-- CADASTRO -->
+    <form id="registerForm" class="hidden">
+        <input type="text" id="registerUser" placeholder="Novo usuário">
+        <input type="password" id="registerPass" placeholder="Senha">
+        <input type="password" id="registerConfirm" placeholder="Confirmar senha">
+
+        <button type="submit" class="secondary">
+            Criar Cadastro
+        </button>
+
+        <button type="button" id="backToLogin" class="link-button">
+            Voltar ao acesso
+        </button>
+    </form>
+
+</div>
+
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

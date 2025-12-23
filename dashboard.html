@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>A.F.A — Painel Central</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <!-- TOPO -->
+    <header class="top-bar">
+        <span class="agency-title">Anomaly Foundation Archives</span>
+
+        <img 
+            src="assets/icones/menu.png" 
+            alt="Menu"
+            class="menu-icon"
+            id="menuButton"
+        >
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <h2>Menu</h2>
+        <button id="closeMenu" class="close-btn">✕</button>
+    </div>
+    <nav class="side-menu-nav">
+    <a href="registros.html" class="menu-item">Registros de Anomalias</a>
+    <a href="ranking.html" class="menu-item">Ranking</a>
+</nav>
+
+</aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="content">
+
+        <!-- SOBRE NÓS -->
+        <section class="about-box">
+            <h2>Agência A.F.A</h2>
+
+            <p>
+                A Anomaly Foundation Archives é uma organização governamental
+                dedicada ao estudo, contenção e catalogação de anomalias.
+                Nosso trabalho garante que ameaças desconhecidas sejam
+                compreendidas antes que representem riscos à sociedade.
+            </p>
+
+            <img 
+                src="assets/imagens/logo.png" 
+                alt="Logo da AFA"
+                class="afa-logo"
+            >
+        </section>
+
+        <!-- DEPARTAMENTOS -->
+        <section class="departments">
+
+            <!-- INFORMAÇÃO -->
+            <div class="department-card info">
+                <img src="assets/imagens/Chesed.png" alt="Líder Informação">
+
+                <div class="department-text">
+                    <h3>Departamento de Informação</h3>
+                    <p>
+                        Responsável pelo armazenamento de registros de anomalias
+                        e manutenção dos servidores principais da A.F.A.
+                    </p>
+                    <a href="departamentos/informacao.html" class="access-btn">
+    Acessar
+</a>
+
+                </div>
+            </div>
+
+            <!-- DISCIPLINA -->
+            <div class="department-card discipline">
+                <img src="assets/imagens/Hokma.png" alt="Líder Disciplina">
+
+                <div class="department-text">
+                    <h3>Departamento de Disciplina</h3>
+                    <p>
+                        Garante a ordem interna, controle de funcionários
+                        e aplicação de protocolo de segurança contra anomalias.
+                    </p>
+                    <a href="departamentos/disciplina.html" class="access-btn">
+    Acessar
+</a>
+
+                </div>
+            </div>
+
+    <script src="js/dashboard.js"></script>
+
+    <footer class="footer">
+    <p>© Anomaly Foundation Archives — Todos os direitos reservados</p>
+</footer>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>
