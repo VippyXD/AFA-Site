@@ -1,0 +1,172 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY PADRÃO */
+body {
+    background: linear-gradient(to bottom, #000 80%, #0a1a33 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 60px; /* espaço da top-bar */
+}
+
+/* TOPO */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #4d7cff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.agency-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu-icon {
+    width: 26px;
+    cursor: pointer;
+}
+
+/* MENU LATERAL */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 260px;
+    height: 100vh;
+
+    background-color: #37323f;
+    padding: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    z-index: 200;
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.side-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.side-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER GLOBAL */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.side-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.side-menu-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu-item {
+    background-color: #2b2732;
+    padding: 12px;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #3b3642;
+}
+
+/* ===== WIKI FOOTER ===== */
+
+.wiki-footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    display: flex;
+    gap: 80px;
+}
+
+.wiki-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.wiki-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wiki-links a {
+    color: #7aaeff;
+    text-decoration: none;
+}
+
+.wiki-links a:hover {
+    text-decoration: underline;
+}

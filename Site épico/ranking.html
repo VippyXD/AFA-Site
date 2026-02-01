@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>A.F.A — Ranking de Funcionários</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/ranking.css">
+</head>
+<body>
+
+<!-- TOPO -->
+<header class="top-bar">
+    <span class="agency-title">Anomaly Foundation Archives</span>
+
+    <img 
+        src="assets/icones/menu.png"
+        alt="Menu"
+        class="menu-icon"
+        id="menuButton"
+    >
+</header>
+
+<!-- MENU LATERAL -->
+<aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <h2>Menu</h2>
+        <button id="closeMenu" class="close-btn">✕</button>
+    </div>
+
+    <nav class="side-menu-nav">
+        <a href="dashboard.html" class="menu-item">Início</a>
+        <a href="registros.html" class="menu-item">Registros de Anomalias</a>
+        <a href="ranking.html" class="menu-item">Ranking</a>
+    </nav>
+</aside>
+
+<!-- CONTEÚDO -->
+<main class="content">
+
+    <!-- TEXTO -->
+    <section class="ranking-info">
+        <h1>Ranking de Funcionários</h1>
+
+        <p>
+            Dentro da Anomaly Foundation Archives (A.F.A), cada funcionário é avaliado
+            constantemente com base em seu desempenho operacional e intelectual.
+            Os critérios de avaliação incluem a qualidade da documentação produzida,
+            experiência em combate, capacidade de contenção e confiabilidade geral
+            para o serviço.
+        </p>
+
+        <p>
+            Com base nesses fatores, os funcionários recebem uma classificação de
+            ranking que varia de <strong>A+</strong> até <strong>F-</strong>.
+        </p>
+
+        <p>
+            Quanto mais elevado o ranking, maiores são os benefícios concedidos pela A.F.A,
+            incluindo bônus operacionais como aumento de vitalidade, força física,
+            resistência e outros aprimoramentos autorizados pela diretoria.
+        </p>
+    </section>
+
+    <!-- LISTA DE FUNCIONÁRIOS -->
+    <section class="ranking-list">
+
+        <div class="ranking-card first-place">
+            <img src="assets/imagens/player1.png" alt="Ori">
+            <h3>Ori</h3>
+            <p><strong>Ranking:</strong> A</p>
+            <p><strong>Boosts:</strong> +Vida</p>
+        </div>
+
+        <div class="ranking-card second-place">
+            <img src="assets/imagens/player2.png" alt="Nero">
+            <h3>Nero</h3>
+            <p><strong>Ranking:</strong> B</p>
+            <p><strong>Boosts:</strong> +Força</p>
+        </div>
+
+        <div class="ranking-card third-place">
+            <img src="assets/imagens/player3.png" alt="Morgana">
+            <h3>Morgana</h3>
+            <p><strong>Ranking:</strong> C</p>
+            <p><strong>Boosts:</strong> +Resistência</p>
+        </div>
+
+        <div class="ranking-card fourth-place">
+            <img src="assets/imagens/player4.png" alt="Akeldama">
+            <h3>Akeldama</h3>
+            <p><strong>Ranking:</strong> F+</p>
+            <p><strong>Boosts:</strong> Nenhum</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© Anomaly Foundation Archives — Todos os direitos reservados</p>
+</footer>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

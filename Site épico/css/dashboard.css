@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, #1f2a44, #000 40%);
+    color: white;
+}
+
+/* TOPO */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #4d7cff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+    z-index: 10;
+}
+
+
+.agency-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.menu-icon {
+    width: 26px;
+    cursor: pointer;
+}
+
+/* MENU LATERAL */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background-color: #37323f;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 12;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+/* CONTEÚDO */
+.content {
+    padding: 100px 40px 40px; /* espaço extra no topo */
+}
+
+
+/* SOBRE */
+.about-box {
+    background-color: #37323f;
+    padding: 30px;
+    border-radius: 14px;
+    max-width: 900px;
+    margin: 0 auto 40px auto; /* CENTRALIZA */
+    text-align: center;
+}
+
+.about-box h2 {
+    margin-bottom: 12px;
+}
+
+.about-box p {
+    color: #d0d0d0;
+    margin-bottom: 20px;
+}
+
+.afa-logo {
+    width: 300px;
+}
+
+/* DEPARTAMENTOS */
+.departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 24px;
+}
+
+/* CARD */
+.department-card {
+    display: flex;
+    height: 180px; /* MAIS ALTO */
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.department-card img {
+    width: 160px;
+    object-fit: cover;
+}
+
+.department-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.department-text h3 {
+    margin-bottom: 8px;
+}
+
+.department-text p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-bottom: 12px;
+}
+
+.department-text button {
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+
+/* CORES POR DEPARTAMENTO */
+.info {
+    background-color: #0d47a1;
+}
+
+.info button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.discipline {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.discipline p {
+    color: #333;
+}
+
+.discipline button {
+    background-color: #9e9e9e;
+}
+
+.control {
+    background-color: #64b5f6;
+}
+
+.control button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.extraction {
+    background-color: #111;
+}
+
+.extraction button {
+    background-color: #fbc02d;
+    color: black;
+}
+
+.side-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.side-menu-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu-item {
+    background-color: #2b2732;
+    padding: 12px;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #3b3642;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+
+    background-color: #111;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.access-btn {
+    display: inline-block;
+    background-color: #1e88e5;
+    color: white;
+
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    transition: background-color 0.2s;
+}
+
+.access-btn:hover {
+    background-color: #1565c0;
+}
+
+body {
+    padding-top: 70px;
+}
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #7aaeff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background: #1a1a1a;
+    padding: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    z-index: 20;
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,126 @@
+/* ===============================
+   ÁREA PRINCIPAL
+================================ */
+
+.content {
+    padding-top: 80px; /* compensar top-bar fixa */
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===============================
+   TEXTO INFORMATIVO
+================================ */
+
+.ranking-info {
+    width: 70%;
+    background-color: #37323f;
+    padding: 30px;
+    border-radius: 14px;
+    color: #ffffff;
+}
+
+.ranking-info h1 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.ranking-info p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #dcdcdc;
+}
+
+/* ===============================
+   LISTA DE FUNCIONÁRIOS
+================================ */
+
+.ranking-list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===============================
+   CARD BASE
+================================ */
+
+.ranking-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 20px;
+    border-radius: 14px;
+
+    color: #ffffff;
+    background-color: #2b2b2b;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ranking-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+/* ===============================
+   IMAGEM DO FUNCIONÁRIO
+================================ */
+
+.ranking-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===============================
+   TEXTO DO CARD
+================================ */
+
+.ranking-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.ranking-card p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #dddddd;
+}
+
+/* ===============================
+   CORES POR POSIÇÃO
+================================ */
+
+/* 1º lugar — Azul escuro */
+.first-place {
+    background-color: #0b1c2d;
+    border-left: 6px solid #1e4fff;
+}
+
+/* 2º lugar — Vermelho claro */
+.second-place {
+    background-color: #3a1414;
+    border-left: 6px solid #ff4d4d;
+}
+
+/* 3º lugar — Roxo escuro */
+.third-place {
+    background-color: #2a1638;
+    border-left: 6px solid #9b4dff;
+}
+
+/* 4º lugar — Vermelho */
+.fourth-place {
+    background-color: #2b0f0f;
+    border-left: 6px solid #cc0000;
+}
