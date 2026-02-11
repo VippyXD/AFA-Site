@@ -2,146 +2,198 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>A.F.A — Registros de Anomalias</title>
-
-    <!-- CSS GLOBAL -->
+    <title>Registros de Anomalias — A.F.A</title>
+    <link rel="stylesheet" href="css/registros.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/registros.css">
 </head>
 <body>
 
-<!-- TOPO -->
-<header class="top-bar">
-    <span class="agency-title">Anomaly Foundation Archives</span>
+    <header class="top-bar">
+        <span class="agency-title">Anomaly Foundation Archives</span>
 
-    <img 
-        src="assets/icones/menu.png"
-        alt="Menu"
-        class="menu-icon"
-        id="menuButton"
-    >
-</header>
+        <img 
+            src="assets/icones/menu.png" 
+            alt="Menu"
+            class="menu-icon"
+            id="menuButton"
+        >
+    </header>
 
-<!-- MENU LATERAL -->
-<aside class="side-menu" id="sideMenu">
+    <!-- MENU LATERAL -->
+    <aside class="side-menu" id="sideMenu">
     <div class="side-menu-header">
         <h2>Menu</h2>
         <button id="closeMenu" class="close-btn">✕</button>
     </div>
-
     <nav class="side-menu-nav">
-        <a href="dashboard.html" class="menu-item">Início</a>
-        <a href="registros.html" class="menu-item">Registros de Anomalias</a>
-        <a href="ranking.html" class="menu-item">Ranking</a>
-    </nav>
+    <a href="dashboard.html" class="menu-item">Início</a>
+    <a href="registros.html" class="menu-item">Registros de Anomalias</a>
+    <a href="ranking.html" class="menu-item">Ranking</a>
+</nav>
+
 </aside>
 
-<!-- CONTEÚDO PRINCIPAL -->
-<main class="content">
+<main class="registros-container">
 
-    <!-- CAIXA DE TEXTO -->
-    <section class="records-info">
+    <!-- CABEÇARIO -->
+    <section class="registros-header">
         <h1>Registros de Anomalias</h1>
-
         <p>
-            Como funcionário da A.F.A, seu dever é registrar o máximo de informações
-            possíveis sobre as anomalias, incluindo anotações, imagens, interações
-            e eventos relevantes.
+            Como funcionário da A.F.A, seu dever é documentar e analisar todas as
+            manifestações anômalas. As anomalias podem variar entre objetos,
+            entidades biológicas, construções e fenômenos abstratos.
         </p>
+    </section>
 
-        <p>
-            Entretanto, é necessário cautela. As anomalias não são entidades comuns:
-            elas podem variar desde objetos aparentemente inofensivos até entidades
-            capazes de causar destruição em larga escala.
-        </p>
+    <!-- QUADRO DE EXPLICAÇÕES -->
+    <section class="registros-explicacoes">
 
-        <h2>Nomeclaturas</h2>
-        <ul class="nomenclature-list">
-            <li>🕸️ <strong>T</strong> — Originada de traumas ou fobias (T-01)</li>
-            <li>✨ <strong>F</strong> — Originada de contos de fada ou histórias (F-019)</li>
-            <li>⚙️ <strong>M</strong> — Originada de maquinaria amaldiçoada (M-030)</li>
-            <li>❔ <strong>D</strong> — Origem desconhecida (D-03)</li>
-            <li>☯️ <strong>R</strong> — Origem religiosa ou filosófica (R-05)</li>
-        </ul>
+        <div class="explicacao-bloco">
+            <h2>Nomeclaturas</h2>
+            <ul>
+                <li>T - Anomalias originadas de traumas ou fobias</li>
+                <li>F - Anomalias originadas de contos de fadas</li>
+                <li>M - Anomalias que são causadas por maquinaria amaldiçoada</li>
+                <li>D - Anomalias de origem desconhecida</li>
+                <li>R - Anomalias ligadas a religião ou filosofia</li>
+            </ul>
+        </div>
 
-        <h2>Níveis de Perigo</h2>
-        <ul class="danger-list">
-            <li class="zayin">🟩 ZAYIN — Anomalias inofensivas</li>
-            <li class="teth">🟦 TETH — Podem causar danos significativos</li>
-            <li class="he">🟨 HE — Podem causar mortes</li>
-            <li class="waw">🟪 WAW — Capazes de causar caos generalizado</li>
-            <li class="aleph">🟥 ALEPH — Capazes de destruição em massa</li>
-        </ul>
+        <div class="explicacao-bloco">
+            <h2>Níveis de Perigo</h2>
+            <ul>
+                <li class="zayin">ZAYIN - Em maioria dos casos são inofensivas.</li>
+                <li class="teth">TETH - Possiveis mortes caso consultadas de maneira impropia.</li>
+                <li class="he">HE - Capacidade de causar possíveis mortes em condições específicas.</li>
+                <li class="waw">WAW - Conseguem matar grupos ou até centenas caso situações saiam de controle.</li>
+                <li class="aleph">ALEPH - Aniquilação total da humanidade caso qualquer erro seja cometido.</li>
+                <li class="nil">NIL - Anomalias ainda a serem classificadas</li>
+            </ul>
+        </div>
+
     </section>
 
     <!-- LISTA DE ANOMALIAS -->
-    <section class="anomaly-list">
+    <section class="anomalias-lista">
 
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/m00.png" alt="???">
-            <a href="anomalias/m00.html">M-00 — ???</a>
+        <div class="anomalia-card nil-card">
+            <div class="anomalia-info">
+                <h3>M-00 - [Classificação Pendente]</h3>
+                <p>Entidade digital com propriedades de vírus e comportamento imprevisível.</p>
+                <a href="anomalias/m00.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/m00.png" alt="M-00">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/t01.png" alt="Operalia">
-            <a href="anomalias/t01.html">T-01 — Operalia</a>
+        <div class="anomalia-card waw-card">
+            <div class="anomalia-info">
+                <h3>T-01 - Operalia</h3>
+                <p>Entidade humanoide autodenominada “maestro”, portadora de arma cortante e comportamento inicialmente pacífico, porém inclinada a iniciar confrontos ritualísticos acompanhados por manifestação sonora anômala coletiva.</p>
+                <a href="anomalias/t01.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/t01.png" alt="T-01">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/t02.png" alt="Remanescents of Love">
-            <a href="anomalias/t02.html">T-02 — Remanescents of Love</a>
+        <div class="anomalia-card aleph-card">
+            <div class="anomalia-info">
+                <h3>T-02 - Remanescents of Love</h3>
+                <p>Entidade amorfa de composição indefinida, com comportamento manipulativo e forte apelo psicológico. Demonstrou capacidade destrutiva extrema, sendo responsável pela neutralização completa de uma instalação temporária da A.F.A.</p>
+                <a href="anomalias/t02.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/t02.png" alt="T-02">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/d03.png" alt="O Botão">
-            <a href="anomalias/d03.html">D-03 — O Botão</a>
+        <div class="anomalia-card teth-card">
+            <div class="anomalia-info">
+                <h3>D-03 - O Botão</h3>
+                <p>Dispositivo anômalo de ativação única que induz compulsão comportamental em indivíduos próximos. Quando acionado, provoca efeitos sensoriais severos em área delimitada e libera descarga energética concentrada.</p>
+                <a href="anomalias/d03.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/d03.png" alt="D-03">
+        </div>        
+
+        <div class="anomalia-card he-card">
+            <div class="anomalia-info">
+                <h3>D-04 - O Parasita</h3>
+                <p>Organismo anômalo de comportamento parasitário capaz de infiltração biológica e posterior manifestação física hostil em forma ampliada. Representa alto risco em ambientes confinados.</p>
+                <a href="anomalias/d04.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/d04.png" alt="D-04">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/d04.png" alt="O Parasita">
-            <a href="anomalias/d04.html">D-04 — O Parasita</a>
+        <div class="anomalia-card waw-card">
+            <div class="anomalia-info">
+                <h3>R-05 - Yin e Yang</h3>
+                <p>Entidade cíclica composta por dois componentes complementares que se separam a cada 250 anos. Um dos aspectos manifesta-se como figura humanoide errante armada, enquanto o outro assume forma de artefato fixo. Quando reunidos, fundem-se novamente, restaurando sua configuração original.</p>
+                <a href="anomalias/r05.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/r05.png" alt="R-05">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/r05.png" alt="Yin e Yang">
-            <a href="anomalias/r05.html">R-05 — Yin e Yang</a>
+        <div class="anomalia-card he-card">
+            <div class="anomalia-info">
+                <h3>D-07 - Big Bird</h3>
+                <p>Entidade aviária de grande porte associada à denominada “Floresta Negra”. Atua de forma territorial e demonstra comportamento protetor sobre a região. Quando provocada, manifesta resposta letal imediata por meio de alteração física agressiva.</p>
+                <a href="anomalias/d07.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/d07.png" alt="D-07">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/d07.png" alt="Big Bird">
-            <a href="anomalias/d07.html">D-07 — Big Bird</a>
+        <div class="anomalia-card waw-card">
+            <div class="anomalia-info">
+                <h3>M-08 - O Proxy</h3>
+                <p>Dispositivo anômalo indestrutível que emite periodicamente ordens direcionadas a indivíduos específicos. O descumprimento resulta em execução conduzida por entidade associada designada M-08-1, conhecida como “Servo do Proxy”.</p>
+                <a href="anomalias/m08.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/m08.png" alt="M-08">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/m08.png" alt="O Proxy">
-            <a href="anomalias/m08.html">M-08 — O Proxy</a>
+        <div class="anomalia-card teth-card">
+            <div class="anomalia-info">
+                <h3>D-09 - Punishing Bird</h3>
+                <p>Entidade aviária de pequeno porte pertencente ao Trio da Floresta Negra. Demonstra comportamento punitivo direcionado a indivíduos considerados “impuros”. Quando atacada, assume forma agressiva temporária e executa o agressor antes de retornar ao estado basal.</p>
+                <a href="anomalias/d09.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/d09.png" alt="D-09">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/d09.png" alt="Punishing Bird">
-            <a href="anomalias/d09.html">D-09 — Punishing Bird</a>
+        <div class="anomalia-card waw-card">
+            <div class="anomalia-info">
+                <h3>T-011 - Biblioteca de Babel</h3>
+                <p>Local anômalo de estrutura infinita composto por salões octogonais interconectados. O acesso ocorre exclusivamente mediante convite formal gerado pela própria anomalia. O ambiente abriga entidades secundárias hostis e possui probabilidade extremamente baixa de saída, tornando a permanência potencialmente indefinida.</p>
+                <a href="anomalias/t011.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/t011.png" alt="T-011">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/t011.png" alt="Biblioteca de Babel">
-            <a href="anomalias/t011.html">T-011 — Biblioteca de Babel</a>
+        <div class="anomalia-card waw-card">
+            <div class="anomalia-info">
+                <h3>D-012 - Judgement Bird</h3>
+                <p>Entidade aviária de grande porte associada à Floresta Negra. Realiza julgamentos baseados em “pecados” do alvo utilizando balança anômala permanentemente desigual, resultando invariavelmente em condenação. A punição manifesta-se como ataque letal de alcance indefinido.</p>
+                <a href="anomalias/d012.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/d012.png" alt="D-012">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/d012.png" alt="Judgement Bird">
-            <a href="anomalias/d012.html">D-012 — Judgement Bird</a>
+        <div class="anomalia-card zayin-card">
+            <div class="anomalia-info">
+                <h3>F-019 - Pinocchio</h3>
+                <p>Marionete anômala senciente que reage de forma hostil a declarações falsas relacionadas à sua identidade. Demonstra aumento progressivo de agressividade e força proporcional ao nível de irritação provocado.</p>
+                <a href="anomalias/f019.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/f019.png" alt="F-019">
         </div>
 
-        <div class="anomaly-card">
-            <img src="assets/imagens/f019.png" alt="Pinocchio">
-            <a href="anomalias/f019.html">F-019 — Pinocchio</a>
-        </div>
-
-        <div class="anomaly-card">
-            <img src="assets/imagens/m30.png" alt="Garion">
-            <a href="anomalias/m030.html">M-030 — Garion</a>
+        <div class="anomalia-card he-card">
+            <div class="anomalia-info">
+                <h3>M-030 - Garion</h3>
+                <p>Unidade mecânica anômala integrada às operações da A.F.A. Apesar de cooperativa em condições estáveis, apresenta episódios psicóticos intermitentes que cessam apenas após eliminação de um alvo orgânico.</p>
+                
+                <a href="anomalias/m030.html">Acessar registro completo</a>
+            </div>
+            <img src="assets/imagens/m30.png" alt="M-030">
         </div>
 
     </section>
@@ -149,11 +201,9 @@
 </main>
 
 <footer class="footer">
-    <p>© Anomaly Foundation Archives — Todos os direitos reservados</p>
+    © Anomaly Foundation Archives — Todos os direitos reservados
 </footer>
 
-<!-- SCRIPTS -->
 <script src="js/menu.js"></script>
-
 </body>
 </html>

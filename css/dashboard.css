@@ -12,26 +12,6 @@ body {
     color: white;
 }
 
-/* TOPO */
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 60px;
-
-    background-color: #4d7cff;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 20px;
-    z-index: 10;
-}
-
-
 .agency-title {
     font-size: 1.4rem;
     font-weight: bold;
@@ -41,23 +21,6 @@ body {
 .menu-icon {
     width: 26px;
     cursor: pointer;
-}
-
-/* MENU LATERAL */
-.side-menu {
-    position: fixed;
-    top: 0;
-    right: -260px;
-    width: 260px;
-    height: 100vh;
-    background-color: #37323f;
-    padding: 20px;
-    transition: right 0.3s ease;
-    z-index: 12;
-}
-
-.side-menu.open {
-    right: 0;
 }
 
 /* CONTEÚDO */
@@ -172,6 +135,27 @@ body {
     color: black;
 }
 
+.forest {
+    background-color: #000000;
+    color: yellow;
+}
+
+.forest button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.templo {
+    background: linear-gradient(to right, white, black);
+    color: rgb(0, 0, 0);
+}
+
+.templo button {
+    background-color: #1e88e5;
+    color: white;
+}
+
+
 .side-menu-header {
     display: flex;
     justify-content: space-between;
@@ -210,13 +194,10 @@ body {
 }
 
 .footer {
-    margin-top: 60px;
-    padding: 20px;
     text-align: center;
-
-    background-color: #111;
-    color: #888;
-    font-size: 0.85rem;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 .access-btn {
@@ -246,7 +227,7 @@ body {
     top: 0;
     width: 100%;
     height: 60px;
-    background: #7aaeff;
+    background: #4d7cff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,4 +261,59 @@ body {
     font-size: 22px;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.home-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    
+}
+
+.section-divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0 20px 0;
+}
+
+.section-divider hr {
+    flex: 1;
+    height: 2px;
+    background: #ccc;
+    border: none;
+    width: 300px;
+}
+
+.section-divider h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.home-card {
+    width: 220px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.home-card:hover {
+    transform: scale(1.05);
 }
