@@ -188,9 +188,27 @@
     color: #fff;
 }
 
+.m013 {
+    border-color:#9900ff ;
+    background: linear-gradient(to right, black, rgb(255, 158, 255));
+    color: #ffb7ff;
+}
+
+.t018 {
+    border-color:#9900ff ;
+    background: linear-gradient(to right, black, rgb(173, 173, 173));
+    color: #ffffff;
+}
+
 .f019 {
     border-color: #1eff00;
     background: linear-gradient(to right, rgb(207, 111, 0), rgb(0, 116, 0));
+    color: #000;
+ }
+
+ .d021 {
+    border-color: #1eff00;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(139, 139, 139));
     color: #000;
  }
 
@@ -209,6 +227,12 @@
 .disc {
 background-color: #ffffff;
 border-color: #4e4e4e;
+color: #000;
+}
+
+.contr {
+background-color: #ffffff;
+border-color: #cbf3ff;
 color: #000;
 }
 
@@ -298,9 +322,27 @@ color: #000;
     color: #000;
 }
 
+/* M-012 */
+.anomaly-m013 {
+    background-color: #ffbcf4;
+    color: #000;
+}
+
+/* T-018 */
+.anomaly-t018 {
+    background-color: #858585;
+    color: #ffffff;
+}
+
 /* F-019 */
 .anomaly-f019 {
     background-color: #6b4a2b;
+    color: #fff;
+}
+
+/* F-019 */
+.anomaly-d021 {
+    background-color: #969696;
     color: #fff;
 }
 

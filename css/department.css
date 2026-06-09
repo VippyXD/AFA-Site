@@ -64,6 +64,17 @@ body {
     color: #333;
 }
 
+.department-box.control {
+    background-color: #b3fcff;
+    color: rgb(255, 255, 255);
+    
+}
+
+.department-box.control p,
+.department-box.control li {
+    color: #000000;
+}
+
 .wiki-footer {
     margin-top: 60px;
     padding: 30px;
